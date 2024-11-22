@@ -1,0 +1,132 @@
+*{
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(255, 240, 219);
+    overflow: hidden;
+}
+
+nav{
+    text-align: center;
+}
+
+nav a{
+
+    color: rgb(100, 99, 99);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    position: relative;
+    top: 20px;
+}
+
+a:after{
+    content:"";
+    position: absolute;
+    background-color: black;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+
+a:hover{
+    color: black
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.categories{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-self: center;
+}
+
+.first-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+}
+
+.second-sec{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 120px;
+}
+
+.meals{
+    display:flex;
+    width: 350px;
+    height: 240px;
+    align-items: center;
+    transition: 500ms;
+}
+
+img{
+    width: 350px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute; 
+}
+
+.meals:hover{
+    transform: scale(1.2);
+}
+
+h1, p{
+    justify-self: center;
+}
+
+h1{
+    font-size: 45px;
+    color: rgb(84, 50, 50);
+    text-shadow: 2px 2px 2px rgb(103, 77, 63);
+    
+}
+
+.main-text{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    color:rgb(117, 96, 70);
+}
+
+.meals p{
+    top: 41%;
+    height: 13%;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    background-color:rgb(255, 240, 219);
+    font-size: 27px;
+    color: rgb(100, 78, 78);
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(69, 41, 25);
+}

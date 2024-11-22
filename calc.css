@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://raw.githubusercontent.com/Mojang/bedrock-samples/main/resource_pack/textures/blocks/barrel_bottom.png");
+    background-size: 10%;
+}
+.calculator-container {
+    text-align: center;
+    background-color: #a08164;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHgxMDU3NDA0LWltYWdlLWpvYjYzMC1mLWwwZzA3N2l6LmpwZw.jpg");
+    background-size: 100%;
+    background-blend-mode: hard-light;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.ingredient {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.drop-area {
+    border: 2px dashed #614700;
+    padding: 20px;
+    min-height: 150px;
+    position: relative;
+}
+
+.drop-area p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+#recipeDisplay {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.result-container {
+    margin-top: 20px;
+}
+
+#finalResult {
+    margin-top: 20px;
+}
+#finalResult img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+button {
+    padding: 10px 20px;
+    background-color: #b88700;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #201800;
+}
+.calculator-container {
+    font-weight: bold;
+}
